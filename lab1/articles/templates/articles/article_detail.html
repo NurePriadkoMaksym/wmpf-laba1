@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ article.title }}</title>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+
+    <p><strong>Автор:</strong> {{ article.author.username }}</p>
+    <p><strong>Дата:</strong> {{ article.published_date }}</p>
+
+    <hr>
+
+    <p>{{ article.text }}</p>
+
+    <br>
+    <a href="{% url 'article_list' %}">Назад до списку</a>
+</body>
+</html>
